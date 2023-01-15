@@ -1,0 +1,17 @@
+#title{
+    text-align: center;
+    font-family: 'Happiness-Sans-Title';
+    font-size: 45px;
+    margin-bottom: 50px;
+    color: rgb(5,71,65);
+}
+
+#postbox{
+    display: flex;
+    justify-content: center;
+}
+
+#post{
+    width: 50%;
+}
+
