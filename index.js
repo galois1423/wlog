@@ -37,7 +37,7 @@ const show = c => {
     }
 }
 
-window.enter = (event) =>{
+window.enter = () =>{
     if(event.KeyCode==13){search()}
 }
 
