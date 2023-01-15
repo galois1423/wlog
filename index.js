@@ -23,7 +23,7 @@ const show = c => {
         for(var j=1; j<tags[codes.indexOf(c[i])].length; j++){
             var t = document.createElement('a')
             t.setAttribute('class', 'taglink')
-            t.innerHTML = '>'+tags[codes.indexOf(c[i])][j]
+            t.innerHTML = '> '+tags[codes.indexOf(c[i])][j]
             ts.appendChild(t)
         }
 
