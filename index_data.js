@@ -39,14 +39,4 @@ add('자연수에 관한 고찰',['fundamental','number_system'],'001')
 console.log(subject)
 
 export{titles, tags, codes}
-
-
-
-
-
-
-
-
-
-
-
+console.log(subject)
