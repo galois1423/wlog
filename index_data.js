@@ -11,6 +11,7 @@ const add = (title, tag, code) => {
         s += '.'+tag[i]
     }
     console.log(s)
+    new Function('return subject'+s+'.push('+code+')')()
 }
 
 const subject = {
