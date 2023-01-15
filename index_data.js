@@ -31,8 +31,7 @@ const add = (title, tag, code) => {
     if(tag.length==2){subject[tag[0]][tag[1]].push(code)}
 }
 
-//contents data
+
 add('자연수에 관한 고찰',['fundamental','number_system'],'001')
-console.log(subject)
 
 export{titles, tags, codes,subject}
