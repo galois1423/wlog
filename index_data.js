@@ -31,10 +31,9 @@ const add = (title, tag, code) => {
     for(var i=0;i<tag.length;i++){
         s += '.'+tag[i]
     }
+    subject.fundamental.number_system.push('001')
     //(new Function('return subject'+s+'.push('+code+')'))()
 }
-
-subject.fundamental.number_system.push('001')
 
 //contents data
 add('자연수에 관한 고찰',['fundamental','number_system'],'001')
