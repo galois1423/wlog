@@ -27,7 +27,8 @@ const add = (title, tag, code) => {
     titles.push(title)
     tags.push(tag)
     codes.push(code)
-    subject[tag[0]][tag[1]].push(code)
+    if(tag.length==1){subject[tag[0]].push(code)}
+    if(tag.length==2){subject[tag[0]][tag[1]].push(code)}
 }
 
 //contents data
