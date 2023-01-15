@@ -2,18 +2,6 @@ var titles = []
 var tags = []
 var codes = []
 
-const add = (title, tag, code) => {
-    titles.push(title)
-    tags.push(tag)
-    codes.push(code)
-    var s=''
-    for(var i=0;i<tag.length;i++){
-        s += '.'+tag[i]
-    }
-    console.log(s)
-    new Function('return subject'+s+'.push('+code+')')()
-}
-
 const subject = {
     fundamental:{
         set_theory:[],
@@ -33,6 +21,17 @@ const subject = {
     },
     combinatorics:[],
     etc:[]
+}
+
+const add = (title, tag, code) => {
+    titles.push(title)
+    tags.push(tag)
+    codes.push(code)
+    var s=''
+    for(var i=0;i<tag.length;i++){
+        s += '.'+tag[i]
+    }
+    new Function('return subject'+s+'.push('+code+')')()
 }
 
 //contents data
