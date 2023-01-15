@@ -32,7 +32,7 @@ const add = (title, tag, code) => {
         s += '.'+tag[i]
     }
     subject.fundamental.number_system.push('001')
-    (new Function('subject'+s+'.push(code)'))()
+    (new Function('subject'+s+'.push()'))(code)
     //(new Function('return subject'+s+'.push('+code+')'))()
 }
 
