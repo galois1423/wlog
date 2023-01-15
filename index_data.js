@@ -3,23 +3,23 @@ var tags = []
 var codes = []
 
 var subject = {
-    fundamental:{
-        set_theory:[],
-        number_system:[],
+    Fundamental:{
+        Set_Theory:[],
+        Number_System:[],
         etc:[]
     },
-    algebra:{
-        equality:[],
-        inequality:[],
-        polynomial:[],
+    Algebra:{
+        Equality:[],
+        Inequality:[],
+        Polynomial:[],
         etc:[]
     },
-    geometry:{
-        Euclidian_geometry:[],
-        coordinate_plane:[],
+    Geometry:{
+        Euclidian_Geometry:[],
+        Coordinate_Plane:[],
         etc:[]
     },
-    combinatorics:[],
+    Combinatorics:[],
     etc:[]
 }
 
