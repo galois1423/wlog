@@ -23,13 +23,12 @@
 }
 
 .thm{
-    font-size: 20px;
     font-family: 'Happiness-Sans-Title';
 }
 
 .thmcontent{
+    margin-top: 10px;
     color: black;
-    font-size: 15px;
     font-family: 'IBMPlexSansKR-Regular';
 }
 
