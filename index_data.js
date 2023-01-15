@@ -32,6 +32,7 @@ const add = (title, tag, code) => {
         s += '.'+tag[i]
     }
     subject.fundamental.number_system.push('001')
+    console.log('return subject'+s+'.push('+code+')')
     //(new Function('return subject'+s+'.push('+code+')'))()
 }
 
