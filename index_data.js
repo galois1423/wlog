@@ -19,6 +19,8 @@ var subject = {
         Coordinate_Plane:[],
         etc:[]
     },
+    Analysis:[],
+    Number_Theory:[],
     Combinatorics:[],
     etc:[]
 }
@@ -33,5 +35,6 @@ const add = (title, tag, code) => {
 
 
 add('자연수에 관한 고찰',['Fundamental','Number_System'],'001')
+add('등호의 성질',['Fundamental','etc'],'002')
 
 export{titles, tags, codes,subject}
