@@ -2,7 +2,7 @@ var titles = []
 var tags = []
 var codes = []
 
-const subject = {
+var subject = {
     fundamental:{
         set_theory:[],
         number_system:[],
@@ -38,5 +38,4 @@ const add = (title, tag, code) => {
 add('자연수에 관한 고찰',['fundamental','number_system'],'001')
 console.log(subject)
 
-export{titles, tags, codes}
-console.log(subject)
+export{titles, tags, codes,subject}
