@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #title{
     text-align: center;
     font-family: 'Happiness-Sans-Title';
@@ -15,3 +22,19 @@
     width: 50%;
 }
 
+.def{
+    color: rgb(5,71,65);
+    background-color: rgb(156, 162, 162);
+    padding: 10px;
+}
+
+.thm{
+    color: rgb(5,71,65);
+    background-color: rgb(156, 162, 162);
+    font-size: 20px;
+    padding: 10px;
+}
+
+.thmcontent{
+    font-size: 15px;
+}
