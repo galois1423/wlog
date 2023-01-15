@@ -10,7 +10,7 @@ const add = (title, tag, code) => {
     for(var i=0;i<tag.length;i++){
         s += '.'+tag[i]
     }
-    eval('subject'+s+'.push('+code+')')
+    console.log(s)
 }
 
 const subject = {
