@@ -32,6 +32,6 @@ const add = (title, tag, code) => {
 }
 
 
-add('자연수에 관한 고찰',['fundamental','number_system'],'001')
+add('자연수에 관한 고찰',['Fundamental','Number_system'],'001')
 
 export{titles, tags, codes,subject}
