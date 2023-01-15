@@ -20,7 +20,7 @@
     <div id="postbox"><div id="post"></div></div>
     <script type="module">
         var c = new URL(location.href).searchParams.get('code');
-        $(function(){
+        $(document).ready(function(){
             $("#post").load('./contents/'+c+'.html');
         });
 
