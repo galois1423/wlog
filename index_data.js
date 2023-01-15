@@ -27,12 +27,7 @@ const add = (title, tag, code) => {
     titles.push(title)
     tags.push(tag)
     codes.push(code)
-    var s=''
-    for(var i=0;i<tag.length;i++){
-        s += '.'+tag[i]
-    }
-    (new Function('subject'+s+'.push()'))(code)
-    //(new Function('return subject'+s+'.push('+code+')'))()
+    subject[tag[0]][tag[1]].push(code)
 }
 
 //contents data
