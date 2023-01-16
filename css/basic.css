@@ -55,3 +55,8 @@ a{
     font-family: 'Happiness-Sans-Title';
     color: rgb(5,71,65);
 }
+
+::selection {
+    background: rgb(5,71,65);
+    color: rgb(247, 247, 247);
+ }
