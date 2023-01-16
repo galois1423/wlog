@@ -51,7 +51,8 @@ const suggest = () =>{
         return codes
     } else{
         if(u.searchParams.get('code')!=null){
-            var s=suggest1().splice(indexOf(u.searchParams.get('code')),1)
+            var s=suggest1()
+            s.splice(s.indexOf(u.searchParams.get('code')),1)
             if(s.length==0){
                 document.getElementById('suggest').innerHTML += ': 없음'
                 return s
