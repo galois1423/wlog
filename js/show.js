@@ -77,9 +77,9 @@ const suggest = () =>{
                 }
             }
             if(r.length==0){
-                document.getElementById('empty').innerHTML='검색결과가 없습니다.'
+                document.getElementById('result').innerHTML='검색결과가 없습니다.'
             } else{
-                document.getElementById('empty').innerHTML='검색결과 : '+r.length.toString()+'건'
+                document.getElementById('result').innerHTML='검색결과 : '+r.length.toString()+'건'
             }
             return r
         }
