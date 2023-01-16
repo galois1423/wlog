@@ -1,4 +1,4 @@
-import {titles, tags, codes} from './index_data.js'
+import {titles, tags, codes} from './data.js'
 
 const show = c => {
     var l = document.getElementById('list')
@@ -37,10 +37,10 @@ const show = c => {
     }
 }
 
+show(codes)
+
 window.search = () => {
     if(document.getElementById('searchtext1').value.length!=0){
         location.href = '/wlog/search?q='+document.getElementById('searchtext1').value
     }
 }
-
-show(codes)
