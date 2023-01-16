@@ -1,4 +1,4 @@
-import {titles,tags,codes} from 'data.js'
+import {titles,tags,codes} from './data.js'
 
 const show = c => {
     var l = document.getElementById('list')
