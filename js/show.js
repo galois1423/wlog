@@ -76,7 +76,6 @@ const suggest = () =>{
                     }
                 }
             }
-            r.splice(r.indexOf(u.searchParams.get('code')),1)
             return r
         }
     }
