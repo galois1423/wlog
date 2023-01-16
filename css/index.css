@@ -24,34 +24,3 @@
 #title3{
     margin-top: 25px;
 }
-
-
-#searchbar{
-    display: flex;
-    justify-content: center;
-    height: 33px;
-    margin-top: 43px;
-}
-
-#searchbutton{
-    background-color: rgb(5, 71, 65);
-    border-radius: 33px;
-    width: 33px;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-}
-
-#searchicon{
-    height: 17px;
-    vertical-align: bottom;
-}
-
-input{
-    width: 250px;
-    border-radius: 33px;
-    border-color: rgb(5, 71, 65);
-    border-width: 1px;
-    margin-right: 3px;
-    padding-left: 10px;
-}

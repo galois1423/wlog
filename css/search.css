@@ -1,0 +1,9 @@
+#emptybox{
+    display: flex;
+    justify-content: center;
+}
+#empty{
+    width: 50%;
+    font-family: 'Happiness-Sans-Title';
+    color: rgb(5,71,65);
+}

@@ -76,6 +76,9 @@ const suggest = () =>{
                     }
                 }
             }
+            if(r.length==0){
+                document.getElementById('empty').innerHTML='검색결과가 없습니다.'
+            }
             return r
         }
     }
