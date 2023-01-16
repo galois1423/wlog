@@ -59,6 +59,25 @@ const suggest = () =>{
             }
             document.getElementById('suggest').innerHTML += ': '+s.length.toString()+'개'
             return s
+        } else{
+            var r=[]
+            if(u.searchParams.get('tag')!=null){
+                var t=u.searchParams.get('tag')
+                for(var i=0;i<codes.length;i++){
+                    if(tag[i].inCludes(t)){
+                        r.push(codes[i])
+                    }
+                }
+            } else{
+                var t=u.searchParams.get('q')
+                for(var i=0;i<codes.length;i++){
+                    if(titles[i].inCludes(t)){
+                        r.push(codes[i])
+                    }
+                }
+            }
+            r.splice(r.indexOf(u.searchParams.get('code')),1)
+            return r
         }
     }
 }
