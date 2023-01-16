@@ -20,3 +20,26 @@ body {
 #list{
     width:50%;
 }
+
+.post{
+    margin-bottom: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.postlink {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.taglink{
+    color: rgb(156, 162, 162);
+    margin-right: 7px;
+    cursor: pointer;
+}
+.taglink:hover{
+    color: rgb(5, 71, 65);
+}
