@@ -56,7 +56,7 @@ const suggest = () =>{
                 document.getElementById('suggest').innerHTML += ': 없음'
                 return s
             }
-            document.getElementById('suggest').innerHTML += ': '+toString(s.length)+'개'
+            document.getElementById('suggest').innerHTML += ': '+s.length.toString()+'개'
             return s
         }
     }
