@@ -1,8 +1,8 @@
-#emptybox{
+#resultbox{
     display: flex;
     justify-content: center;
 }
-#empty{
+#result{
     width: 50%;
     font-family: 'Happiness-Sans-Title';
     color: rgb(5,71,65);
