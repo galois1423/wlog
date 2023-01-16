@@ -56,16 +56,6 @@ input{
     padding-left: 10px;
 }
 
-#listbox{
-    margin-top: 80px;
-    display: flex;
-    justify-content: center;
-}
-
-#list{
-    width:50%;
-}
-
 .post{
     margin-bottom: 30px;
 }

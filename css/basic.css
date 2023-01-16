@@ -10,3 +10,13 @@ body {
     font-family: 'IBMPlexSansKR-Regular';
     background-color: rgb(247, 247, 247);
 }
+
+#listbox{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+#list{
+    width:50%;
+}
