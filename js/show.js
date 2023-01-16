@@ -64,14 +64,14 @@ const suggest = () =>{
             if(u.searchParams.get('tag')!=null){
                 var t=u.searchParams.get('tag')
                 for(var i=0;i<codes.length;i++){
-                    if(tag[i].inCludes(t)){
+                    if(tag[i].includes(t)){
                         r.push(codes[i])
                     }
                 }
             } else{
                 var t=u.searchParams.get('q')
                 for(var i=0;i<codes.length;i++){
-                    if(titles[i].inCludes(t)){
+                    if(titles[i].includes(t)){
                         r.push(codes[i])
                     }
                 }
