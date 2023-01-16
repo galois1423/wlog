@@ -1,6 +1,6 @@
 import {titles, tags, codes} from './data.js'
 
-const show = c => {
+export const show = c => {
     var l = document.getElementById('list')
     for(var i=0; i<c.length;i++){
         var p = document.createElement("div")
@@ -37,9 +37,7 @@ const show = c => {
     }
 }
 
-show(codes)
-
-window.search = () => {
+export const search = () => {
     if(document.getElementById('searchtext1').value.length!=0){
         location.href = '/wlog/search?q='+document.getElementById('searchtext1').value
     }
