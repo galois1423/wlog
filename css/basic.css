@@ -50,3 +50,8 @@ a{
 .taglink:hover{
     color: rgb(5, 71, 65);
 }
+
+.t{
+    font-family: 'Happiness-Sans-Title';
+    color: rgb(5,71,65);
+}
