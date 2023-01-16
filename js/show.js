@@ -1,6 +1,6 @@
-import {titles, tags, codes} from './data.js'
+import {titles,tags,codes} from 'data.js'
 
-export const show = c => {
+const show = c => {
     var l = document.getElementById('list')
     for(var i=0; i<c.length;i++){
         var p = document.createElement("div")
@@ -37,8 +37,18 @@ export const show = c => {
     }
 }
 
-export const search = () => {
-    if(document.getElementById('searchtext1').value.length!=0){
-        location.href = '/wlog/search?q='+document.getElementById('searchtext1').value
+const suggest = () =>{
+    u = new URL(location.href)
+    if(u.search.length==0){
+        return codes
+    } else{
+        if(u.searchParams.get('code')!=null){
+            var code = u.searchParams.get('code')
+            var tag = tags[codes.indexOf(code)]
+            if(tag.length==1){return subject[tag[0]]}
+            if(tag.length==2){return subject[tag[0]][tag[1]]}
+        }
     }
 }
+
+show(suggest())
