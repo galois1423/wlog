@@ -54,7 +54,7 @@ const suggest = () =>{
             var s=suggest1()
             s.splice(s.indexOf(u.searchParams.get('code')),1)
             if(s.length==0){
-                document.getElementById('suggest').innerHTML += ': 없음'
+                document.getElementById('suggest').innerHTML += '이 없습니다.'
                 return s
             }
             document.getElementById('suggest').innerHTML += ': '+s.length.toString()+'개'
@@ -77,9 +77,9 @@ const suggest = () =>{
                 }
             }
             if(r.length==0){
-                document.getElementById('result').innerHTML='<span class="t">'+t+'</span>검색결과가 없습니다.'
+                document.getElementById('result').innerHTML='<span class="t">'+t+'</span>에 대한 검색결과가 없습니다.'
             } else{
-                document.getElementById('result').innerHTML='<span class="t">'+t+'</span>에 대한 검색결과 : '+r.length.toString()+'건'
+                document.getElementById('result').innerHTML='<span class="t">'+t+'</span>에 대한 검색결과 : <span class="t">'+r.length.toString()+'</span>건'
             }
             return r
         }
