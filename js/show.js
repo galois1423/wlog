@@ -37,16 +37,26 @@ const show = c => {
     }
 }
 
+const suggest1 = () =>{
+    var code = u.searchParams.get('code')
+    var tag = tags[codes.indexOf(code)]
+    if(tag.length==1){return subject[tag[0]]}
+    if(tag.length==2){return subject[tag[0]][tag[1]]}
+}
+    
 const suggest = () =>{
     var u = new URL(location.href)
     if(u.search.length==0){
         return codes
     } else{
         if(u.searchParams.get('code')!=null){
-            var code = u.searchParams.get('code')
-            var tag = tags[codes.indexOf(code)]
-            if(tag.length==1){return subject[tag[0]]}
-            if(tag.length==2){return subject[tag[0]][tag[1]]}
+            var s=suggest1()
+            if(s.length==0){
+                document.getElementById('suggest').innerHTML += ': 없음'
+                return s
+            }
+            document.getElementById('suggest').innerHTML += ': '+toString(s.length)+'개'
+            return s
         }
     }
 }
