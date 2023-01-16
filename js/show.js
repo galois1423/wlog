@@ -37,6 +37,8 @@ const show = c => {
     }
 }
 
+var u = new URL(location.href)
+
 const suggest1 = () =>{
     var code = u.searchParams.get('code')
     var tag = tags[codes.indexOf(code)]
@@ -45,7 +47,6 @@ const suggest1 = () =>{
 }
     
 const suggest = () =>{
-    var u = new URL(location.href)
     if(u.search.length==0){
         return codes
     } else{
