@@ -38,7 +38,7 @@ const show = c => {
 }
 
 const suggest = () =>{
-    u = new URL(location.href)
+    var u = new URL(location.href)
     if(u.search.length==0){
         return codes
     } else{
