@@ -59,8 +59,8 @@ const suggest = () =>{
                 t.setAttribute('class', 'taglink')
                 t.setAttribute('href','/wlog/search?tag='+tags[codes.indexOf(code)][i])
                 t.innerHTML = tags[codes.indexOf(code)][i]
+                ts.appendChild(t)
             }
-            ts.appendChild(t)
             if(s.length==0){
                 document.getElementById('suggest').innerHTML += '이 없습니다.'
                 return s
