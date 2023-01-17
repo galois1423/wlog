@@ -16,6 +16,13 @@
     <div class="tsbox"><div class="ts"></div></div>
     <div id="listbox"><div id="list"></div></div>
     <script src="./js/show.js" type="module"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({            
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}            
+        });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
     <script type="module">
         var c = new URL(location.href).searchParams.get('code');
         $(document).ready(function(){
@@ -25,12 +32,5 @@
         import {titles, tags, codes} from './js/data.js'
         document.getElementById('title').innerHTML = titles[codes.indexOf(c)]
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({            
-            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}            
-        });
-    </script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
 </body>
 </html>
