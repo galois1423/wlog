@@ -30,6 +30,20 @@
     justify-content: space-between;
 }
 
+button{
+    appearance: none;
+    background-color: rgb(247, 247, 247);
+    color: rgb(5,71,65);
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover{
+    background-color: rgb(5,71,65);
+    color: rgb(247, 247, 247);
+}
+
 .thm{
     font-family: 'Happiness-Sans-Title';
 }
