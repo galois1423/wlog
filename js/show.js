@@ -57,8 +57,8 @@ const suggest = () =>{
             for(var i=0;i<tag.length;i++){
                 var t = document.createElement('a')
                 t.setAttribute('class', 'taglink')
-                t.setAttribute('href','/wlog/search?tag='+tags[codes.indexOf(c[i])][0])
-                t.innerHTML = tags[codes.indexOf(c[i])][0]
+                t.setAttribute('href','/wlog/search?tag='+tags[codes.indexOf(code)][i])
+                t.innerHTML = tags[codes.indexOf(code)][i]
             }
             ts.appendChild(t)
             if(s.length==0){
