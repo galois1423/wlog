@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 #title{
     text-align: center;
     font-family: 'Happiness-Sans-Title';
@@ -47,9 +49,15 @@
 .tsbox{
     display: flex;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 80px;
 }
 
 .ts{
     width:50%;
+}
+
+#qedbox{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 18px;
 }
