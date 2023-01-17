@@ -54,11 +54,16 @@ const suggest = () =>{
             var s=suggest1()
             s.splice(s.indexOf(u.searchParams.get('code')),1)
             var ts = document.getElementsByClassName('ts')[0]
-            for(var i=0;i<tag.length;i++){
+            var t = document.createElement('a')
+            t.setAttribute('class', 'taglink')
+            t.setAttribute('href','/wlog/search?tag='+tags[codes.indexOf(code)][0])
+            t.innerHTML = tags[codes.indexOf(code)][0]
+            ts.appendChild(t)
+            for(var i=1;i<tag.length;i++){
                 var t = document.createElement('a')
                 t.setAttribute('class', 'taglink')
                 t.setAttribute('href','/wlog/search?tag='+tags[codes.indexOf(code)][i])
-                t.innerHTML = tags[codes.indexOf(code)][i]
+                t.innerHTML = '> '+tags[codes.indexOf(code)][i]
                 ts.appendChild(t)
             }
             if(s.length==0){

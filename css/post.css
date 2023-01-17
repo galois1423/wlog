@@ -43,3 +43,8 @@
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
+.ts{
+    display: flex;
+    justify-content: center;
+}
