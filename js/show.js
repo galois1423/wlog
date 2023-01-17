@@ -38,10 +38,10 @@ const show = c => {
 }
 
 var u = new URL(location.href)
+var code = u.searchParams.get('code')
+var tag = tags[codes.indexOf(code)]
 
 const suggest1 = () =>{
-    var code = u.searchParams.get('code')
-    var tag = tags[codes.indexOf(code)]
     if(tag.length==1){return subject[tag[0]]}
     if(tag.length==2){return subject[tag[0]][tag[1]]}
 }
@@ -53,6 +53,14 @@ const suggest = () =>{
         if(u.searchParams.get('code')!=null){
             var s=suggest1()
             s.splice(s.indexOf(u.searchParams.get('code')),1)
+            var ts = document.getElementsByClassName('ts')[0]
+            for(var i=0;i<tag.length;i++){
+                var t = document.createElement('a')
+                t.setAttribute('class', 'taglink')
+                t.setAttribute('href','/wlog/search?tag='+tags[codes.indexOf(c[i])][0])
+                t.innerHTML = tags[codes.indexOf(c[i])][0]
+            }
+            ts.appendChild(t)
             if(s.length==0){
                 document.getElementById('suggest').innerHTML += '이 없습니다.'
                 return s
