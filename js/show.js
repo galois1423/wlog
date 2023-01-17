@@ -67,10 +67,10 @@ const suggest = () =>{
                 ts.appendChild(t)
             }
             if(s.length==0){
-                document.getElementById('suggest').innerHTML += '이 없습니다.'
+                document.getElementById('suggestpost').innerHTML += '이 없습니다.'
                 return s
             }
-            document.getElementById('suggest').innerHTML += ': '+s.length.toString()+'개'
+            document.getElementById('suggestpost').innerHTML += ': '+s.length.toString()+'개'
             return s
         } else{
             var r=[]
