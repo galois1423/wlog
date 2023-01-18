@@ -9,6 +9,7 @@
     <title>Post</title>
 </head>
 <body>
+    <script src="./js/move.js"></script>
     <div id="title"></div>
     <div id="postbox"><div id="post"></div></div>
     <div id="qedbox">Quod Erat Demonstrandum.</div>
@@ -16,9 +17,9 @@
         <div id="suggest" class="t">
             <div id="suggestpost">연관게시글</div>
             <div id="suggestpage">
-                <button onclick="location.href='./post.html?code='+(Number((new URL(location.href)).searchParams.get('code'))-1).toString().padStart(3,'0')">이전 글</button>
+                <button onclick="left()">이전 글</button>
                 <button onclick="location.href='./'">홈</button>
-                <button onclick="location.href='./post.html?code='+(Number((new URL(location.href)).searchParams.get('code'))+1).toString().padStart(3,'0')">다음 글</button>
+                <button onclick="right()">다음 글</button>
             </div>
         </div>
     </div>
